@@ -19,3 +19,7 @@ def test_init():
     assert len(Item.all) == 6
     assert Item.string_to_number('5') == 5
     assert Item.string_to_number('5.5') == 5
+
+    # Tests for homework 3
+    assert item.__repr__() == "Item('test2', 100.0, 100)"
+    assert item.__str__() == 'test2'
